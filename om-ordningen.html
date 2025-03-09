@@ -4,10 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Om ordningen - Det Glade Tog</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      
+      /* Container for centered content */
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      /* Header Styles */
+      header {
+        background-color: #222;
+        color: #fff;
+        padding: 20px 0;
+      }
+      
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .logo img {
+        max-height: 50px;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+      
+      nav ul li {
+        margin-left: 20px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      
+      nav ul li a:hover,
+      nav ul li a.active {
+        color: #f0a500;
+      }
+      
+      /* Main Content */
+      main {
+        padding: 60px 0;
+      }
+      
+      /* Ensure all headings, paragraphs and lists are left-aligned */
+      h1, h2, h3, h4, h5, h6,
+      p,
+      ul {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+      
+      /* Footer Styles */
+      footer {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      
+      footer p {
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
-    <!-- Header med logo og navigation -->
+    <!-- Header with logo and navigation -->
     <header>
       <div class="container header-container">
         <div class="logo">
@@ -16,7 +105,7 @@
           </a>
         </div>
         <nav>
-          <ul class="main-menu">
+          <ul>
             <li><a href="index.html">Velkommen</a></li>
             <li><a href="om-ordningen.html" class="active">Om ordningen</a></li>
             <li><a href="hverdagen.html">Hverdagen</a></li>
@@ -27,75 +116,71 @@
         </nav>
       </div>
     </header>
-
-    <!-- Hovedindhold -->
+    
+    <!-- Main Content -->
     <main>
-      <section id="om-ordningen">
-        <div class="container">
-          <h1>Om pasningsordningen – Det Glade Tog 🚂</h1>
-          
-          <p>
-            <strong>📍 Beliggenhed:</strong><br>
-            Privat pasningsordning i en stor, lys 1. sals lejlighed på Landsdommervej, tæt på Bispebjerg, København NV og Ydre Nørrebro.
-          </p>
-
-          <p>
-            <strong>⏰ Åbningstider:</strong>
-          </p>
-          <ul>
-            <li>Mandag - Torsdag: 08:15 - 16:00</li>
-            <li>Fredag: 08:15 - 15:00</li>
-          </ul>
-
-          <p>
-            <strong>💰 Pris:</strong><br>
-            11.680 kr./md. (2023 priser)<br>
-            Københavns Kommune yder tilskud til privat pasning – se mere på: <a href="https://kk.dk/privatpasning" target="_blank">kk.dk/privatpasning</a><br>
-            Bemærk: Man kan ikke få økonomisk friplads i denne ordning.
-          </p>
-
-          <p>
-            <strong>🍽 Mad &amp; Pleje:</strong><br>
-            Jeg sørger for:
-          </p>
-          <ul>
-            <li>✔ Morgenmad, frokost &amp; 2 x snacks (økologisk &amp; sund)</li>
-            <li>✔ Bleer &amp; nødvendigt tilbehør</li>
-          </ul>
-
-          <p>
-            <strong>📜 Forhold &amp; Tilsyn:</strong>
-          </p>
-          <ul>
-            <li>✔ Gensidigt opsigelsesvarsel: 14 dage</li>
-            <li>✔ Dit barn bevarer sin plads på den kommunale venteliste</li>
-            <li>✔ Fast tilsyn: Københavns Kommune fører tilsyn hver 2. måned eller efter behov</li>
-            <li>✔ Tilsynsførende pædagog observerer børnenes trivsel og vejleder i udvikling</li>
-            <li>✔ Forsikring: Forældre skal selv sørge for forsikring af deres barn</li>
-          </ul>
-
-          <p>
-            <strong>📞 Kontakt &amp; Info:</strong><br>
-            📱 Tlf: 42 77 10 14<br>
-            📧 E-mail: <a href="mailto:alexsandra786@hotmail.com">alexsandra786@hotmail.com</a><br>
-            📌 Facebook: <a href="https://www.facebook.com/DetGladeTogPrivatPasningsordning" target="_blank">Det Glade Tog – Privat Pasningsordning</a><br>
-            Læs mere om privat pasning her: <a href="https://kk.dk/privatpasning" target="_blank">kk.dk/privatpasning</a>
-          </p>
-
-          <p>
-            Jeg glæder mig til at byde jeres barn velkommen i en tryg og kærlig pasningsordning! 😊✨
-          </p>
-        </div>
-      </section>
+      <div class="container">
+        <h1>Om pasningsordningen – Det Glade Tog 🚂</h1>
+        
+        <p>
+          <strong>📍 Beliggenhed:</strong><br>
+          Privat pasningsordning i en stor, lys 1. sals lejlighed på Landsdommervej, tæt på Bispebjerg, København NV og Ydre Nørrebro.
+        </p>
+        
+        <p>
+          <strong>⏰ Åbningstider:</strong>
+        </p>
+        <ul>
+          <li>Mandag - Torsdag: 08:15 - 16:00</li>
+          <li>Fredag: 08:15 - 15:00</li>
+        </ul>
+        
+        <p>
+          <strong>💰 Pris:</strong><br>
+          11.680 kr./md. (2023 priser)<br>
+          Københavns Kommune yder tilskud til privat pasning – se mere på: <a href="https://kk.dk/privatpasning" target="_blank">kk.dk/privatpasning</a><br>
+          Bemærk: Man kan ikke få økonomisk friplads i denne ordning.
+        </p>
+        
+        <p>
+          <strong>🍽 Mad &amp; Pleje:</strong><br>
+          Jeg sørger for:
+        </p>
+        <ul>
+          <li>✔ Morgenmad, frokost &amp; 2 x snacks (økologisk &amp; sund)</li>
+          <li>✔ Bleer &amp; nødvendigt tilbehør</li>
+        </ul>
+        
+        <p>
+          <strong>📜 Forhold &amp; Tilsyn:</strong>
+        </p>
+        <ul>
+          <li>✔ Gensidigt opsigelsesvarsel: 14 dage</li>
+          <li>✔ Dit barn bevarer sin plads på den kommunale venteliste</li>
+          <li>✔ Fast tilsyn: Københavns Kommune fører tilsyn hver 2. måned eller efter behov</li>
+          <li>✔ Tilsynsførende pædagog observerer børnenes trivsel og vejleder i udvikling</li>
+          <li>✔ Forsikring: Forældre skal selv sørge for forsikring af deres barn</li>
+        </ul>
+        
+        <p>
+          <strong>📞 Kontakt &amp; Info:</strong><br>
+          📱 Tlf: 42 77 10 14<br>
+          📧 E-mail: <a href="mailto:alexsandra786@hotmail.com">alexsandra786@hotmail.com</a><br>
+          📌 Facebook: <a href="https://www.facebook.com/DetGladeTogPrivatPasningsordning" target="_blank">Det Glade Tog – Privat Pasningsordning</a><br>
+          Læs mere om privat pasning her: <a href="https://kk.dk/privatpasning" target="_blank">kk.dk/privatpasning</a>
+        </p>
+        
+        <p>
+          Jeg glæder mig til at byde jeres barn velkommen i en tryg og kærlig pasningsordning! 😊✨
+        </p>
+      </div>
     </main>
-
+    
     <!-- Footer -->
     <footer>
       <div class="container">
         <p>&copy; 2025 Det Glade Tog – Privat Pasningsordning. Alle rettigheder forbeholdes.</p>
       </div>
     </footer>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
