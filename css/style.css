@@ -1,0 +1,89 @@
+/* Generel reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Container til centreret indhold */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  nav ul.main-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul.main-menu li {
+    margin-left: 20px;
+  }
+  
+  nav ul.main-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul.main-menu li a:hover,
+  nav ul.main-menu li a.active {
+    color: #f0a500;
+  }
+  
+  /* Banner sektion (bruges på forsiden) */
+  #banner {
+    background: url('../images/banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Sektioner */
+  section {
+    padding: 60px 0;
+  }
+  
+  section h1,
+  section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
